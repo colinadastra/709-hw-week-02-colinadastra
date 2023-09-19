@@ -1,0 +1,27 @@
+Exercise 4.2
+
+1-2. See annotated code below:
+    public static void main(String[] args) {                // 1
+        zippo("rattle", 13);                                // 2
+    } something
+    public static void baffle(String blimp) {               // 8
+        System.out.println(blimp);                          // 9
+        zippo("ping", -5);                                  // 14
+    }
+    public static void zippo(String quince, int flag) {     // 3, 10
+        if (flag < 0) {                                     // 4, 11
+            System.out.println(quince + " zoop");           // 12
+        } else {                                            // 5
+            System.out.println("ik");                       // 6
+            baffle(quince);                                 // 7
+            System.out.println("boo-wa-ha-ha");             // 15
+        }                                                   // 13, 16
+    }
+
+3. The first time baffle gets invoked, the parameter blimp has the value "rattle".
+
+4. The program's output is as follows:
+    ik
+    rattle
+    ping zoop
+    boo-wa-ha-ha
