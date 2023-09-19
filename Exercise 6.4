@@ -1,0 +1,16 @@
+public boolean isAbecedarian(String test) {
+    boolean result = true;
+    for (int i = 0; i < test.length() - 1; i++) {
+        result &= (test.charAt(i) == test.charAt(i+1));
+    }
+    return result;
+}
+
+ALTERNATIVELY 
+
+public boolean isAbecedarian(String test) {
+    for (int i = 0; i < test.length() - 1; i++) {
+        if (test.charAt(i) != test.charAt(i+1)) return false;
+    }
+    return true;
+}
